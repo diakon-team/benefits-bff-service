@@ -25,6 +25,9 @@ public class Application {
     @Column(nullable=false)
     private ApplicationStatus status;
 
+    @Column(name="payload", columnDefinition = "TEXT")
+    private String payload;
+
     @Column(name="created_at", nullable=false)
     private LocalDateTime createdAt;
 }
